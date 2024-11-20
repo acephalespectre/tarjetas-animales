@@ -1,0 +1,73 @@
+/*Hola :3 clase lleva punto y la id lleva #, asterisco * es un selector universal*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: wheat;
+}
+
+h1 {
+    color: brown;
+    text-align: center;
+    margin: 20px 0;
+}
+
+main {
+    /* Mantener las tarjetas horizontales */
+    display: flex;
+    justify-content: space-between; /* Espacio uniforme entre las tarjetas */
+    flex-wrap: nowrap; /* Evitar que pasen a una nueva línea */
+    padding: 20px; /* Espacio alrededor del contenedor */
+    gap: 20px; /* Separación adicional si es necesario */
+    overflow-x: auto; /* Permitir desplazamiento horizontal si no caben */
+}
+
+.tarjeta {
+    width: 320px;
+    background-color: antiquewhite;
+    border-radius: 3%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+ 
+}
+
+.tarjeta:hover {
+    transform: rotate(-5deg); /* Inclina la tarjeta hacia la izquierda */
+    background-color: lightblue; /* Cambia el color de fondo a azul pálido */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Agrega una sombra al pasar el cursor */
+}
+
+.tarjeta .caja-contenedora {
+    width: 200px;
+}
+
+.tarjeta .imagen {
+    width: 200px;
+    display: flex;
+}
+
+.tarjeta img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.tarjeta p {
+    color: brown;
+    font-size: 20px;
+}
+
+#gato {
+    color: darkred;
+}
+
+#perro {
+    color: blue;
+}
